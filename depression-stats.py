@@ -4,7 +4,8 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-depression_table = "https://raw.githubusercontent.com/ldsimidu/music-effects-on-psychology/refs/heads/main/spreadsheets/taxa-depressao-regiao.csv"
+depression_table = "spreadsheets/taxa-depressao-regiao.csv"
+#depression_table = "https://raw.githubusercontent.com/ldsimidu/music-effects-on-psychology/refs/heads/main/spreadsheets/taxa-depressao-regiao.csv"
 
 @app.route("/")
 def show_total_table():
